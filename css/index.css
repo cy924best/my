@@ -1,0 +1,347 @@
+.warp h2 {
+  margin: 0;
+  padding: 10px 20px;
+}
+.warp h2 a {
+  padding: 5px 5px;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 20px;
+  background: #6b3b34;
+  border-radius: 50%;
+}
+.warp h2 a span {
+  font-size: 18px;
+}
+.warp h2 a:hover {
+  text-decoration: none;
+}
+.warp .flex {
+  padding: 50px 30px;
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+  display: flex;
+  justify-content: space-between;
+}
+.warp header {
+  width: 100%;
+  height: 650px;
+  padding: 50px 30px;
+  background: url(../img/banner1.jpg);
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.warp header ul li {
+  float: right;
+  padding: 0 20px;
+  font-size: 20px;
+}
+.warp header ul .left {
+  float: left;
+}
+.warp nav {
+  height: 50px;
+  width: 100%;
+  background: #8a6d3b;
+}
+.warp nav ul {
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8%;
+}
+.warp nav ul li {
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  padding: 0 5px;
+}
+.warp nav ul li a {
+  color: #fff;
+}
+.warp nav ul li:hover {
+  background: #dfc5a4;
+  border-radius: 50%;
+}
+.warp nav ul li:hover a {
+  text-decoration: none;
+  color: #000;
+}
+.warp .nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.warp .oriBox {
+  padding-top: 80px;
+  background: #dfc5a4;
+}
+.warp .oriBox .origin_box {
+  padding: 50px 30px;
+}
+.warp .oriBox .origin_box .banner {
+  width: 600px;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 0 50px;
+}
+.warp .oriBox .origin_box .banner .imgBox ul li img {
+  width: 600px;
+}
+.warp .oriBox .origin_box .banner .btnBox ul {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.warp .oriBox .origin_box .banner .btnBox ul li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #bbbd8b;
+  float: left;
+  margin: 10px;
+}
+.warp .oriBox .origin_box .banner .btnBox ul .active {
+  background: #f29d9a;
+}
+.warp .oriBox .origin_box .origin {
+  padding: 0 20px 20px;
+  width: 560px;
+  height: 320px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: #647660;
+  margin-left: 20px;
+  color: #eee;
+  overflow: hidden;
+}
+.warp .oriBox .origin_box .origin h3 {
+  font-size: 24px;
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+}
+.warp .oriBox .origin_box .origin p {
+  font-size: 18px;
+  height: 240px;
+  line-height: 30px;
+  color: #fff;
+  text-indent: 40px;
+  overflow: hidden;
+}
+.warp .jieshao {
+  height: 641px;
+  background: url(../img/raw.jpg) no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  font-size: 18px;
+}
+.warp .jieshao .templet {
+  margin: 0 auto;
+  padding-top: 100px;
+  position: relative;
+  transition: all 0.5s linear;
+}
+.warp .jieshao .templet div {
+  position: relative;
+  transition: all 0.5s linear;
+}
+.warp .jieshao .templet h2 {
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.warp .jieshao .templet li {
+  margin-top: 30px;
+  overflow: hidden;
+}
+.warp .jieshao .templet li p:nth-of-type(1) {
+  width: 60px;
+  float: left;
+  background: #699aa9;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 30px;
+}
+.warp .aniBox {
+  overflow: hidden;
+  background: #ccd39d;
+  padding-top: 80px;
+}
+.warp .aniBox .animate_box div {
+  width: 200px;
+  height: 200px;
+  margin: 80px;
+  transform: perspective(800px) rotateY(-60deg) rotateX(30deg);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 3s;
+}
+.warp .aniBox .animate_box div img {
+  width: 100%;
+  height: 100%;
+  background: #F90;
+  position: absolute;
+  transition: 3s;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  color: #000;
+}
+.warp .aniBox .animate_box div .left {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.warp .aniBox .animate_box div .right {
+  transform: rotateY(90deg) translateZ(-100px);
+}
+.warp .aniBox .animate_box div .top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.warp .aniBox .animate_box div .bottom {
+  transform: rotateX(90deg) translateZ(-100px);
+}
+.warp .aniBox .animate_box div .front {
+  transform: translateZ(100px);
+}
+.warp .aniBox .animate_box div .back {
+  transform: translateZ(-100px);
+}
+.warp .aniBox .animate_box div:hover {
+  transform: perspective(800px) rotateY(360deg) rotateX(-360deg);
+}
+.warp .sdBox {
+  height: 700px;
+  background: #684752;
+  padding: 50px 0 80px;
+  position: relative;
+}
+.warp .sdBox h2 {
+  position: absolute;
+  top: 80px;
+}
+.warp .sdBox .sd_box {
+  width: 133px;
+  height: 200px;
+  margin: 100px auto;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: perspective(800px) rotateX(-20deg);
+  position: relative;
+}
+.warp .sdBox .sd_box li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #FFF,0 0 20px #FFF,0 0 30px #FFF;
+}
+.warp .sdBox .sd_box li i {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  transform: scale(1, -1);
+  -webkit-mask: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5));
+}
+.warp .xinxi {
+  height: 650px;
+  background: url(../img/b2.jpg) no-repeat;
+  background-size: 100% 100%;
+  padding: 6% 8%;
+  text-align: center;
+  font-size: 16px;
+}
+.warp .xinxi form {
+  width: 800px;
+  margin: 0 auto;
+  color: #eee;
+}
+.warp .xinxi form fieldset {
+  border: 1px gainsboro solid ;
+  border-radius: 3px;
+}
+.warp .xinxi form fieldset legend {
+  display: inline;
+  width: auto;
+  margin-bottom: 0;
+  border-bottom: none;
+  font-size: 35px;
+}
+.warp .xinxi form fieldset p {
+  font-size: 35px;
+  text-align: right;
+  margin-bottom: 40px;
+  color: #000;
+}
+.warp .xinxi form fieldset label {
+  background: #ccc;
+  color: #000;
+}
+.warp .xinxi form fieldset input {
+  width: 300px;
+  margin-left: 20px;
+  height: 40px;
+  margin-bottom: 30px;
+  background: none;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding-left: 8px;
+}
+.warp .xinxi form fieldset button {
+  width: 200px;
+  font-size: 20px;
+  background: #3d6376;
+  color: white;
+  line-height: 300%;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.warp footer {
+  height: 500px;
+  text-align: center;
+  font-size: 13px;
+  color: darkgray;
+  overflow: hidden;
+  padding: 50px 30px 100px;
+  background: #4e3b35;
+}
+.warp footer #allmap {
+  width: 380px;
+  height: 420px;
+  overflow: hidden;
+}
+.warp footer .computer {
+  width: 200px;
+  height: 200px;
+  background: url(../img/computer.png) no-repeat;
+  margin: 80px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 16px;
+}
+.warp footer .computer .terminal {
+  width: 60%;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0px auto;
+}
+.warp footer .resume {
+  margin-top: 100px;
+}
+.warp footer .resume .resume-tit {
+  font-size: 1.8em;
+}
+.warp .goTop {
+  width: 44px;
+  height: 46px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}

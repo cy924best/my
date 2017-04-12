@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery.js"></script>
+	
+	<title>甜甜的彩色梦</title>
+</head>
+<body>
+	<div class="warp">
+		<header>
+
+			<ul class="clearfix">
+				<li class="left"><a href="#"><img src="img/logo.png" alt="" /></a></li>
+				<li><a href="#"><i class="glyphicon glyphicon-headphones"></i></a></li>
+				<li><a href="#"><i class="glyphicon glyphicon-envelope"></i></a></li>
+				<li><a href="#"><i class="glyphicon glyphicon-earphone"></i></a></li>
+				<li><a href="#"><i class="glyphicon glyphicon-comment"> </i></a></li>
+			</ul>
+		</header>
+		<nav>
+			<ul class="clearfix">
+				<li><a href="#">sweet首页</a></li>
+				<li><a href="#ori">关于马卡龙</a></li>
+				
+				<li><a href="#ani">甜品展示</a></li>
+				<li><a href="#sd">3D甜品展示</a></li>
+				<li><a href="#dra">梦想原料</a></li>
+				<li><a href="#sz">时尚爆炸区</a></li>
+				
+				<li><a href="#xz">关于我们</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+		</nav>
+
+		<!-- <div id="help"></div> -->
+		<script>
+		$(window).scroll(function(){
+			// alert(1);
+			var navTop = $('header').outerHeight();
+			var top = $(window).scrollTop();
+			var divTop = $('.jieshao').offset().top - 400;
+			if (top >= navTop) {  //导航栏判断  		
+				$('nav').addClass('nav');
+				$('#help').addClass('show');
+			}else{
+				$('nav').removeClass('nav');
+				$('#help').removeClass('show');
+			}
+			if (top >= divTop){  //介绍动画
+			$('.jieshao').find('div').css({'opacity':'1','left':'0px'}) 		
+	}else{
+		$('.jieshao').find('div').css({'left':'-50px','opacity':'0'})
+	}
+	
+			
+		})
+		</script>
+		<!-- 关于起源-->
+		<section class="oriBox" id="ori">
+		<h2><a href="javascript:;">关于马卡龙<span>（焦点图）</span></a></h2>
+			<section class="container-fluid origin_box">
+				<div class="banner col-lg-6">
+				
+					<div class="imgBox">
+						<ul>
+							<li><img src="img/b0.jpg" alt="">1</li>
+							<li><img src="img/b3.jpg" alt="">2</li>
+							<li><img src="img/b2.jpg" alt="">3</li>
+							<li><img src="img/b3.jpg" alt="">4</li>
+							<li><img src="img/b1.jpg" alt="">4</li>
+						</ul>
+					</div>
+					<div class="btnBox">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+				<script>
+					$('.banner').slide({
+						type:'slide',
+						titCell:$('.btnBox li'),
+						mainCell:$('.imgBox ul'),
+						titOnClassName:'active',
+						autoPage:false,
+						effect:"leftLoop",
+						autoPlay:true,
+						vis:1,
+						easing:"easeOutCirc"
+					});
+				</script>
+				<div class="origin col-lg-6">
+					<h3>关于马卡龙那个甜甜的梦想</h3>
+					<p>
+						很久很久以前：传闻马卡龙是中世纪时期，意大利修道院的修女发明的。一直到20世纪之前，它都只是一个类似于饼干一样的杏仁味小饼。1533年，法国国王亨利二世的意大利妻子Catherine de Médicis将杏仁小饼马卡龙带入了法国宫廷，此后，才有了关于马卡龙早期配方...
+						真正让马卡龙声名大噪的，巴黎的甜品屋 Ladurée。20世纪初，Ladurée先生的孙子Pierre Desfontaines 尝试在两片杏仁小饼中加入巧克力味奶油，并改良了配方，使之更加柔软细滑，从此，马卡龙风靡。
+					</p>
+				</div>
+			</section>
+			
+		</section>
+		<!-- 起源结束 -->
+		
+		<section class="aniBox" id="ani">
+			<h2><a href="javascript:;">甜品展示<span>（H5）</span></a></h2>
+			<section class="animate_box container-fluid">
+				<div class="col-lg-4">
+			    	<img class="front" src="img/b0.jpg" width="200" height="200" alt="">
+			    	<img class="back" src="img/b1.jpg" width="200" height="200" alt="">
+			    	<img class="left" src="img/b2.jpg" width="200" height="200" alt="">
+			    	<img class="right" src="img/b3.jpg" width="200" height="200" alt="">
+			    	<img class="top" src="img/b2.jpg" width="200" height="200" alt="">
+			    	<img class="bottom" src="img/b3.jpg" width="200" height="200" alt="">   
+	   			</div>
+	   			<div class="col-lg-4">
+			    	<img class="front" src="img/b0.jpg" width="200" height="200" alt="">
+			    	<img class="back" src="img/b1.jpg" width="200" height="200" alt="">
+			    	<img class="left" src="img/b2.jpg" width="200" height="200" alt="">
+			    	<img class="right" src="img/b3.jpg" width="200" height="200" alt="">
+			    	<img class="top" src="img/b2.jpg" width="200" height="200" alt="">
+			    	<img class="bottom" src="img/b3.jpg" width="200" height="200" alt="">   
+	   			</div>
+	   			<div class="col-lg-4">
+			    	<img class="front" src="img/b0.jpg" width="200" height="200" alt="">
+			    	<img class="back" src="img/b1.jpg" width="200" height="200" alt="">
+			    	<img class="left" src="img/b2.jpg" width="200" height="200" alt="">
+			    	<img class="right" src="img/b3.jpg" width="200" height="200" alt="">
+			    	<img class="top" src="img/b2.jpg" width="200" height="200" alt="">
+			    	<img class="bottom" src="img/b3.jpg" width="200" height="200" alt="">   
+	   			</div>
+			</section>
+		</section>
+		<section class="sdBox" id="sd">
+			<h2><a href="javascript:;">3D甜品展示区</a></h2>
+			<ul class="sd_box">
+				
+			</ul>
+					
+		</section>
+		<script>
+			window.onload=function(){
+				var oUl=document.querySelector('.sd_box');
+				
+				var N=11;
+				for(var i=0;i<N;i++){
+					var oLi=document.createElement('li');
+					oLi.style.backgroundImage='url(img/a'+(i+1)+'.jpg)';
+					
+					oUl.appendChild(oLi);
+					
+				}
+				
+				var aLi=oUl.children;
+				setTimeout(function(){
+					for(var i=0; i<aLi.length;i++){
+						aLi[i].d=360/N*i;
+						aLi[i].style.transition='1s '+(aLi.length-i)*200+'ms';
+						aLi[i].style.transform='rotateY('+aLi[i].d+'deg) translateZ(350px)';
+						var oI=document.createElement('i');
+						oI.style.backgroundImage='url(img/a'+(i+1)+'.jpg)';
+						aLi[i].appendChild(oI);
+					
+					}	
+				},0);
+				
+				var rotateY=0;
+				var rotateX=-20;
+				var lastX=0;
+				var lastY=0;
+				var speedX=0;
+				var speedY=0;
+				var timer=null;
+				document.onmousedown=function(ev){
+					var dX=ev.clientX;	
+					var dY=ev.clientY;
+					document.onmousemove=function(ev){
+						var x=ev.clientX-dX;
+						var y=ev.clientY-dY;
+						if(x>0){
+							x=5;	
+						}else{
+							x=-5;	
+						}
+						if(y>0){
+							y=1;	
+						}else{
+							y=-1;
+						}
+						
+						speedX=ev.clientX-lastX;
+						speedY=ev.clientY-lastY;
+						
+						lastX=ev.clientX;
+						lastY=ev.clientY;
+						
+						run(y,x);
+					}
+					document.onmouseup=function(){
+						document.onmousemove=null;
+						document.onmouseup=null;
+						clearInterval(timer);
+						timer=setInterval(function(){
+							
+							speedY*=0.9;
+							speedX*=0.9;
+							
+							run(speedY,speedX);
+							
+							if(Math.abs(speedX)<0.5&&Math.abs(speedY)<0.5){
+								clearInterval(timer);
+							}
+							
+						},30);
+							
+					};
+					return false;
+				};
+				
+				function run(y,x){
+					rotateX-=y;
+					oUl.style.transform='perspective(800px) rotateX('+rotateX+'deg)';
+					for(var i=0; i<aLi.length;i++){
+						aLi[i].style.transition='none';
+						aLi[i].d+=x;
+						aLi[i].style.transform='rotateY('+aLi[i].d+'deg) translateZ(350px)';
+						var oPa=Math.abs(180-Math.abs(aLi[i].d)%360)/180;
+						if(oPa<0.5){oPa=0.5}
+						aLi[i].style.opacity=oPa;
+					}
+				}
+				
+				
+			};
+		</script>
+		<section class="jieshao" id="dra">
+					<div class="templet">						
+						<div>						
+							<h2>关于马卡龙甜甜的梦想</h2>
+							<ul>
+								<li>
+									<p>原料<br/>介绍</p>
+									<p>用蛋白、杏仁粉、白砂糖和糖霜</p>
+									<p>夹有水果酱或奶油的法式甜点</p>
+								</li>
+								<li>
+									<p>烘焙<br/>方法</p>
+									<p>层次感分明，外酥内软。很薄但酥脆的外壳，又软又绵密</p>
+									<p>表面光滑，无坑疤</p>
+								</li>
+								<li>
+									<p>口感<br/>外观</p>
+									<p>层次感分明，外酥内软。很薄但酥脆的外壳，又软又绵密</p>
+									<p>表面光滑，无坑疤</p>
+								</li>
+								<li >
+									<p>文化<br/>故事</p>
+									<span style="vertical-align:-15px;">了解文化、故事</span>
+								</li>
+								<li style="font-size: 14px;">注：以口感为例</li>
+							</ul>					
+						</div>
+					</div>
+				</section>
+		<section class="xinxi">
+			<form >
+				<fieldset>
+					<legend align="center">命运不是机遇，而是选择</legend>
+					<p>命运不靠等待，而凭争取。</p>
+					<label name="xinming">姓&#x3000;名</label>
+					<input type="text" name="xingming" placeholder="请填写您的姓名" required=""/><br />
+					<label name="iphone">手机号</label>
+					<input type="text" name="iphone" placeholder="请填写您的手机号" required=""/><br />
+					<label name="qq">Q&#x3000;Q&nbsp;</label>
+					<input type="text" name="qq" placeholder="请填写您的QQ号" required=""/><br />
+					<button>立即报名</button>
+				</fieldset>
+			</form>
+		</section>
+		<footer class="clearfix">
+				
+				<div id="allmap" class="fl">
+					</div>
+					<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=EAc9690e060a06cfe50a260d491afd15"></script>
+					<script>
+					
+						// 百度地图API功能
+						var map = new BMap.Map("allmap");
+						var point = new BMap.Point(116.292627,40.110145);
+						map.centerAndZoom(point,15);
+						
+						var removeMarker = function(e,ee,marker){
+						    map.removeOverlay(marker);
+						}
+						//创建右键菜单
+						var markerMenu=new BMap.ContextMenu();
+						markerMenu.addItem(new BMap.MenuItem('删除',removeMarker.bind(marker)));
+
+						var marker = new BMap.Marker(point);
+						map.addOverlay(marker);
+						marker.addContextMenu(markerMenu);
+				
+					</script>
+					<div class="computer fl">
+						<div class="terminal ">
+								
+						</div>
+					</div>
+					<div class="resume fl">
+						<p class="resume-tit">简介</p>
+                        <p>运用百度API实现<br/>实现地理位置的坐标定位，方便快速的找到响应位置</p>
+
+					</div>
+					
+					<script type="text/javascript" src="js/typewriting.min.js"></script>
+					<script>
+					    $(document).ready(function() {
+					        setTimeout(function() {
+					            $('.terminal').typewriting("曹月，从事Web前端工作2年。", {
+					                "typing_interval": 200,
+					                "blink_interval": "1s",
+					                "cursor_color": "#000"
+					            }, function() {
+					                console.log("END");
+					            });
+					            setTimeout(function() {
+					                $('.terminal').rewrite("曹月，Web前端", function() {
+					                    console.log("END, 2.");
+					                });
+					            }, 3300);
+					        }, 1000);
+					    });
+					</script>
+		</footer>
+		<section class="goTop">
+				<a href="#"><img src="img/top.png"/></a>
+		</section>
+		
+	</div>
+</body>
+</html>
